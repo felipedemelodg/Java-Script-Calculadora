@@ -1,0 +1,105 @@
+    /* --reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* --display */
+    
+    #buttons,
+    #numeral-buttons,
+    body,
+    #container {
+        display: flex;
+    }
+    /* --direction */
+    
+    #container {
+        flex-direction: column;
+    }
+    /* --wrap */
+    
+    #numeral-buttons {
+        flex-wrap: wrap;
+    }
+    /* --aling */
+    
+    body,
+    #container {
+        align-items: center;
+    }
+    
+    #numeral-buttons {
+        justify-content: space-between;
+    }
+    
+    body {
+        justify-content: center;
+    }
+    /* --width */
+    
+    #numeral-buttons,
+    #buttons,
+    #screen {
+        width: 200px;
+    }
+    
+    #container {
+        width: 250px;
+    }
+    
+    .bt {
+        width: 40px;
+    }
+    /* --heigth */
+    
+    .bt,
+    #screen {
+        height: 40px;
+    }
+    
+    #container {
+        height: 300px;
+    }
+    
+    #buttons {
+        height: 200px;
+    }
+    
+    body {
+        height: 100vh;
+    }
+    
+    #numeral-buttons {
+        height: 100%;
+    }
+    /* --border */
+    
+    .bt,
+    #screen,
+    #buttons,
+    #container {
+        border-radius: 5px;
+    }
+    /* --margin */
+    
+    .bt {
+        margin: 0 1px;
+    }
+    /* --container */
+    
+    #container {
+        background-color: rgb(34, 37, 37);
+    }
+    /* --screen */
+    
+    #screen {
+        background-color: rgb(168, 229, 253);
+        margin-top: 20px;
+    }
+    /* --button */
+    
+    #buttons {
+        margin-top: 15px;
+    }
