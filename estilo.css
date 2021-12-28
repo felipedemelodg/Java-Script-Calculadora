@@ -7,11 +7,18 @@
     }
     /* --display */
     
+    #screen,
     #buttons,
-    #numeral-buttons,
     body,
     #container {
         display: flex;
+    }
+    
+    #numeral-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 40px);
+        grid-template-rows: repeat(5, 40px);
+        grid-auto-flow: row;
     }
     /* --direction */
     
@@ -31,11 +38,19 @@
     }
     
     #numeral-buttons {
-        justify-content: space-between;
+        justify-content: center;
     }
     
     body {
         justify-content: center;
+    }
+    
+    #screen {
+        justify-content: end;
+    }
+    
+    #screen {
+        align-items: end;
     }
     /* --width */
     
@@ -72,7 +87,7 @@
     }
     
     #numeral-buttons {
-        height: 100%;
+        height: 200px;
     }
     /* --border */
     
@@ -100,6 +115,20 @@
     }
     /* --button */
     
+    #zero {
+        width: 80px;
+        grid-column: 1/3;
+    }
+    
+    #igual {
+        height: 80px;
+    }
+    
     #buttons {
         margin-top: 15px;
+    }
+    /* --screen */
+    
+    #screen {
+        padding: 4px;
     }
